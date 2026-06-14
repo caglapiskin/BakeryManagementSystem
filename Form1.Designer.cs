@@ -32,6 +32,7 @@ namespace FirinMatikPro
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
@@ -50,7 +51,7 @@ namespace FirinMatikPro
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Italic, GraphicsUnit.Point, 162);
-            label1.Location = new Point(18, 94);
+            label1.Location = new Point(20, 180);
             label1.Name = "label1";
             label1.Size = new Size(98, 25);
             label1.TabIndex = 0;
@@ -60,7 +61,7 @@ namespace FirinMatikPro
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label2.Location = new Point(18, 118);
+            label2.Location = new Point(20, 204);
             label2.Name = "label2";
             label2.Size = new Size(102, 25);
             label2.TabIndex = 1;
@@ -70,7 +71,7 @@ namespace FirinMatikPro
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label3.Location = new Point(18, 141);
+            label3.Location = new Point(20, 227);
             label3.Name = "label3";
             label3.Size = new Size(79, 25);
             label3.TabIndex = 2;
@@ -82,9 +83,9 @@ namespace FirinMatikPro
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(18, 191);
+            button1.Location = new Point(181, 271);
             button1.Name = "button1";
-            button1.Size = new Size(193, 29);
+            button1.Size = new Size(214, 37);
             button1.TabIndex = 3;
             button1.Text = "Ürünü Fırına Kaydet";
             button1.UseVisualStyleBackColor = false;
@@ -92,23 +93,23 @@ namespace FirinMatikPro
             // 
             // txtBarkod
             // 
-            txtBarkod.Location = new Point(140, 142);
+            txtBarkod.Location = new Point(142, 228);
             txtBarkod.Name = "txtBarkod";
-            txtBarkod.Size = new Size(153, 27);
+            txtBarkod.Size = new Size(265, 27);
             txtBarkod.TabIndex = 4;
             // 
             // txtFiy
             // 
-            txtFiy.Location = new Point(140, 119);
+            txtFiy.Location = new Point(142, 205);
             txtFiy.Name = "txtFiy";
-            txtFiy.Size = new Size(153, 27);
+            txtFiy.Size = new Size(265, 27);
             txtFiy.TabIndex = 5;
             // 
             // txtUrunAdi
             // 
-            txtUrunAdi.Location = new Point(140, 92);
+            txtUrunAdi.Location = new Point(142, 178);
             txtUrunAdi.Name = "txtUrunAdi";
-            txtUrunAdi.Size = new Size(153, 27);
+            txtUrunAdi.Size = new Size(265, 27);
             txtUrunAdi.TabIndex = 6;
             txtUrunAdi.TextChanged += txtUrunAdi_TextChanged;
             // 
@@ -125,11 +126,8 @@ namespace FirinMatikPro
             dataGridViewCellStyle2.BackColor = Color.Sienna;
             dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 10.5F, FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = Color.White;
-            
-            // --- MAVİ RENK KALINTILARI BURADA TAMAMEN SIYAH KAFFESİNE ÇEVRİLDİ ---
             dataGridViewCellStyle2.SelectionBackColor = Color.Sienna;
             dataGridViewCellStyle2.SelectionForeColor = Color.White;
-            
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeight = 40;
@@ -144,19 +142,23 @@ namespace FirinMatikPro
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.GridColor = Color.FromArgb(240, 240, 240);
-            dataGridView1.Location = new Point(18, 226);
+            dataGridView1.Location = new Point(18, 330);
             dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Sienna;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            
-            // Köşe hücrelerin seçim rengini de Sienna yapıyoruz
-            dataGridView1.RowHeadersDefaultCellStyle.SelectionBackColor = Color.Sienna;
-            
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             dataGridView1.RowTemplate.Height = 32;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(640, 222);
+            dataGridView1.Size = new Size(1009, 345);
             dataGridView1.TabIndex = 7;
             // 
             // button2
@@ -165,9 +167,9 @@ namespace FirinMatikPro
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.ForeColor = Color.White;
-            button2.Location = new Point(238, 191);
+            button2.Location = new Point(401, 271);
             button2.Name = "button2";
-            button2.Size = new Size(193, 29);
+            button2.Size = new Size(214, 37);
             button2.TabIndex = 8;
             button2.Text = "Seçili Ürünü Sil";
             button2.UseVisualStyleBackColor = false;
@@ -179,9 +181,9 @@ namespace FirinMatikPro
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.ForeColor = Color.White;
-            button3.Location = new Point(458, 191);
+            button3.Location = new Point(621, 271);
             button3.Name = "button3";
-            button3.Size = new Size(193, 29);
+            button3.Size = new Size(214, 37);
             button3.TabIndex = 9;
             button3.Text = "Fiyatı Güncelle";
             button3.UseVisualStyleBackColor = false;
@@ -194,7 +196,7 @@ namespace FirinMatikPro
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1617, 857);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
